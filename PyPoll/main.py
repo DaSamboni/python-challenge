@@ -32,7 +32,7 @@ vote_percentages = [round(percent, 2) for percent in vote_percentages]
 
 
 totals = []
-for x in vote_tallies.values():
+for x in vote_counts.values():
     totals.append(x)
 
 
@@ -41,8 +41,8 @@ for x in range(len(candidates)):
     election_results.append(f"{candidates[x]}: {vote_percentages[x]} ({totals[x]})")
 
 
-most_votes = max(vote_tallies.values())
-election_winner = [k for k, v in vote_tallies.items() if v == most_votes]
+most_votes = max(vote_counts.values())
+election_winner = [k for k, v in vote_counts.items() if v == most_votes]
 
 
 output_data = "Election Results\n"
