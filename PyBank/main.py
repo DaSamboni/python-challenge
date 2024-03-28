@@ -19,7 +19,7 @@ with open(csv_path, newline = "") as csvfile:
     profit_loss.append(row[1])
     
 profit_loss = list(map(int, profit_loss))
-month_total = len(profit_losses)
+month_total = len(profit_loss)
 total_profit = sum(profit_loss)
 
 for x in range(1,len(profit_loss)):
