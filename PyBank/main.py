@@ -32,8 +32,8 @@ largest_increase = max(monthly_change)
 largest_decrease = min(monthly_change)
 
 
-largest_increase_date = date[monthly_change.index(max(monthly_change))]
-largest_decrease_date = date[monthly_change.index(min(monthly_change))]
+largest_increase_date = dates[monthly_change.index(max(monthly_change))]
+largest_decrease_date = dates[monthly_change.index(min(monthly_change))]
 
 
 complete_data = (
