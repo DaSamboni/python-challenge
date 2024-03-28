@@ -12,7 +12,7 @@ monthly_change = []
 
 with open(csv_path, newline = "") as csvfile:
   csvreader = csv.reader(csvfile, delimiter = ',')
-  next(csvreader, none)
+  next(csvreader, None)
 
   for row in csvreader:
     dates.append(row[0])
